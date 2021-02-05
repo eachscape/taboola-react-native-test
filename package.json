@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "__android:release-clean": "cd ./android && ./gradlew clean cleanBuildCache && cd .. && react-native bundle --reset-cache --platform android --dev false --minify true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android --variant=release",
     "android:release-clean": "react-native run-android --variant=release",
     "ios": "react-native run-ios",
     "start": "react-native start",
